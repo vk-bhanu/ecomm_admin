@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
 import {
   ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
 } from '@clerk/nextjs'
-import localFont, { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "../globals.css";
 import LeftsideBar from "@/components/layout/LeftsideBar";
 import TopBar from "@/components/layout/TopBar";
