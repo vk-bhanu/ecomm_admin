@@ -3,7 +3,7 @@ import { columns } from '@/components/orderItems/OrderItemsColums'
 import React from 'react'
 
 const OrderDetails = async ({ params }: { params: { orderId: string }}) => {
-  const res = await fetch(`http://localhost:3000/api/orders/${params.orderId}`)
+  const res = await fetch(`${process.env.ADMIN_DASHBOARD_URL}api/orders/${params.orderId}`)
   const { orderDetails,customer } = await res.json()
   console.log(orderDetails)
 
